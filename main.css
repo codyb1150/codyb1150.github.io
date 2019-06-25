@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+html, body, h1, h2, h3, h4, h5, h6, p, li, ol, ul, pre {
+	margin: 0 !important;
+    padding: 0 !important;
+	margin-bottom: 0 !important;
+	scroll-behavior: smooth;
+}
+html, body { min-height: 100%; }
+
+body {
+	background-color: white;
+	/* background-image: linear-gradient(to bottom, #0009, transparent); */
+	color: #eee;
+	font-family: 'Lato', sans-serif;
+	font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.links {
+	background-color: rgb(0, 0, 0);
+	background-image: linear-gradient(to bottom, #0003, transparent);
+	border-bottom: 1px solid #0003;
+	box-shadow: 0 0 32px #0003;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.links > a {
+	color: #9ab;
+	padding: .8em;
+	text-align: center;
+	text-decoration: none;
+	transition: all .5s;
+}
+.links > a:hover {
+	background: #ffffff06;
+	color: white;
+}
+.links > .line {
+	background: rgb(255, 255, 255);
+	height: 1px;
+	pointer-events: none;
+}
+
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.links {
+	display: grid;
+	grid-template-columns: repeat(var(--items), 1fr);
+	position: relative;
+}
+.links > .line {
+	opacity: 0;
+	transition: all .5s;
+	position: absolute;
+	bottom: 0;
+	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
+	width: var(--width, calc(100% / var(--items)));
+	--index: 0;
+}
+.links > a:hover ~ .line {
+	opacity: 1;
+}
+
+.links > a:nth-of-type(1):hover ~ .line { --index: 1; }
+.links > a:nth-of-type(2):hover ~ .line { --index: 2; }
+.links > a:nth-of-type(3):hover ~ .line { --index: 3; }
+.links > a:nth-of-type(4):hover ~ .line { --index: 4; }
+.links > a:nth-of-type(5):hover ~ .line { --index: 5; }
+.links > a:nth-of-type(6):hover ~ .line { --index: 6; }
+.links > a:nth-of-type(7):hover ~ .line { --index: 7; }
+.links > a:nth-of-type(8):hover ~ .line { --index: 8; }
+.links > a:nth-of-type(9):hover ~ .line { --index: 9; }
+.links > a:nth-of-type(10):hover ~ .line { --index: 10; }
+.links > a:last-of-type:hover ~ .line { --index: var(--items); }
+
+/*-----Everything Above Is From This (https://codepen.io/seto89/pen/WmGwwp)-----*/
+
+.jumbotron {
+    border-radius: 0;
+    text-align: center;
+     padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 15%;
+    padding-bottom: 12%;
+    min-height: 100%;
+    font-family: 'Exo';
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-color: white;
+    /* background-image: url(https://images.wallpaperscraft.com/image/mountains_sky_horizon_clouds_118401_1920x1080.jpg) !important; */
+    color: black;
+    margin-bottom: 0 !important;
+}
+
+.container3 {
+    border: solid 2px rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 30px; 
+}
+
+/*-----------------------------------------------------------------------*/
+
+#projects {
+margin-left: 160px;
+padding: 20px;
+} 
+
+ul#menu li {
+	display:inline; 
+	margin: 35px 35px 35px 0px;
+	
+ }
+ 
+ .container1 {
+	 position: relative;
+	 width: 50%;
+	 padding: 20px;
+   }
+ 
+   img { 
+	 border-radius: 120px;
+	 margin: 10px;
+   }
+   
+   .middle {
+	 transition: .5s ease;
+	 opacity: 0;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 -ms-transform: translate(-50%, -50%);
+	 text-align: center;
+   }
+   
+   .container1:hover .middle {
+	 opacity: 2;
+   }
+   
+   .text {
+	 background-color: white;
+	 color: black;
+	 font-size: 16px;
+	 padding: 16px 40px;
+	 border-radius: 120px;
+   }
+
+   .emailLabel {
+	   color: black;
+   }
+
+   .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+	background-color: black !important;
+	border-color: black;
+	padding: 10px;
+	margin: auto;
+}
+
+form {
+	background-color: white;
+	padding: 20px;
+}
+
+.button_slide {
+    color: black;
+      border: 2px solid black;
+      border-radius: 0px;
+      padding: 18px 36px;
+      display: inline-block;
+      /* font-family: "Lucida Console", Monaco, monospace; */
+      font-size: 14px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      box-shadow: inset 0 0 0 0 black;
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      transition: ease-out 0.4s;
+    }
+  
+    .slide_left:hover {
+	  box-shadow: inset 0 0 0 50px black;
+	  color: white;
+    }
+  
+    #outer {
+      width: 364px;
+      margin: 50px auto 0 auto;
+      text-align: center;
+      
+	}
+
+ 
