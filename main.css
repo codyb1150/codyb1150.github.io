@@ -48,6 +48,7 @@ body {
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 1;
 }
 .links {
 	display: grid;
@@ -92,17 +93,21 @@ body {
     font-family: 'Exo';
     background-repeat: no-repeat;
 	background-size: cover;
-	background-color: white;
+	background-color: 	white;
     /* background-image: url(https://images.wallpaperscraft.com/image/mountains_sky_horizon_clouds_118401_1920x1080.jpg) !important; */
     color: black;
     margin-bottom: 0 !important;
 }
 
 .container3 {
-    border: solid 2px rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 2px white;
+    background-color: white;
     border-radius: 10px;
     padding: 30px; 
+}
+
+.portImage {
+	border: 3px solid black;
 }
 
 /*-----------------------------------------------------------------------*/
@@ -110,6 +115,8 @@ body {
 #projects {
 margin-left: 160px;
 padding: 20px;
+z-index: 1 !important;
+background-color: white;
 } 
 
 ul#menu li {
@@ -174,7 +181,6 @@ form {
       border-radius: 0px;
       padding: 18px 36px;
       display: inline-block;
-      /* font-family: "Lucida Console", Monaco, monospace; */
       font-size: 14px;
       letter-spacing: 1px;
       cursor: pointer;
